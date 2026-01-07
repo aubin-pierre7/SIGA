@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Login from "../pages/Login/Login";
 import Dashboard from "../pages/Dashboard/Dashboard";
+import Documents from "../pages/Documents/Documents";
 import MainLayout from "../layouts/MainLayout";
 
 function AppRoutes() {
@@ -14,6 +15,15 @@ function AppRoutes() {
         element={
           <MainLayout>
             <Dashboard />
+          </MainLayout>
+        }
+      />
+
+      <Route
+        path="/documents"
+        element={
+          <MainLayout>
+            <Documents />
           </MainLayout>
         }
       />
